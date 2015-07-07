@@ -1,0 +1,86 @@
+
+html, body {
+	font-family: Arial, serif;
+	color: #040404;
+	background: #13505B !important;
+}
+
+h1 {
+	text-align: center;
+	background: #13505B;
+}
+
+.simon {
+	margin-right: auto;
+	margin-left: auto;
+	height: 300px;
+	width: 60%;
+}
+
+.wrapper {
+	width: 540px;
+	margin: auto;
+	background: #13505B;
+}
+
+.tile {
+	opacity: 0.6;
+}
+.tile:active {
+	opacity: 1;
+}
+.game-info button {
+	width: 120px;
+	font-size: 20px;
+	border-radius: 10px;
+	background: #00a69a;
+	border: 3px solid black;
+	padding: 5px;
+}
+.game-info{
+	margin-right: auto;
+	margin-left: auto;
+	width: 50%;
+}
+.game-info button:hover {
+	background: #0C7489;
+}
+
+.red, .blue, .purple, .green {
+	height: 290px;
+	border: inherit;
+	border-radius: 150px 150px 150px 150px;
+	position: absolute;
+	text-indent: 10000px;
+}
+
+.red:hover, .blue:hover, .purple:hover, .green:hover {
+	border: 5px solid black
+}
+
+.red {
+	background: red;
+	clip: rect(0px, 300px, 150px, 150px);
+	width: 296px;
+}
+
+.blue {
+	background: blue;
+	clip: rect(0px, 150px, 150px, 0px);
+	width: 300px;
+}
+
+.purple {
+	background: purple;
+	clip: rect(150px, 150px, 300px, 0px);
+	width: 300px;
+}
+
+.green {
+	background: lime;
+	clip: rect(150px,300px, 300px, 150px);
+	width: 296px;
+}
+.active{
+	opacity: 1;
+}
