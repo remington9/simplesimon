@@ -60,8 +60,20 @@ $(function() {
 	}
 // alert user that they lost and reload the page to restart game
 	function gameOver() {
-	    location.reload(true);
-    	alert('GAME OVER! You made it ' + simonArray.length + ' rounds! Thanks for playing!')
+		if(confirm('GAME OVER! You made it ' + simonArray.length + ' rounds! Wanna play again?')){
+			setTimeout(function(){
+			   window.location.reload(1);
+			}, 1000);
+		}else{
+			alert('ಥ_ಥ');
+			$("#round").raptorize({
+				enterOn: "timer",
+				delayTime: 0
+			});
+			setTimeout(function(){
+			   window.location.reload(1);
+			}, 3000);
+		}
 	}
 
 	function userClick(id) {
@@ -85,4 +97,13 @@ $(function() {
 	}
 
 	$('#start').click(start);
+
+
+    $('#myButton').raptorize();
+	$('#myButton').click(function(){
+		setTimeout(function(){
+			window.location.reload(1);
+		}, 2050);
+	});
+
 });
